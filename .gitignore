@@ -1,0 +1,10 @@
+node_modules/*
+sessions/*
+npm-debug.log
+config/ssl/*
+bower_components/*
+artwork/*
+uploads/*
+.jshintrc
+.sass-cache
+sortofbutnotreallyagulpfile.txt

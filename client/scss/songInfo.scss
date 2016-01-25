@@ -1,0 +1,82 @@
+#song-info {
+    //position: absolute;
+    //bottom: 0;
+    background-color: #cccccc;
+    padding: 1em;
+    flex-shrink: 0;
+    //width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #888888;
+
+    & > * {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    #song-time {
+        flex-grow: 3;
+    }
+
+    $height: 0.5em;
+    $backgroundColor: #aaaaaa;
+    $barColor: #cc0000;
+    $markerWidth: 1em;
+    $markerColor: #555555;
+
+
+    #song-progress {
+        width: 30%;
+        display: flex;
+        align-items: center;
+
+        p {
+            display: inline;
+            flex-grow: 0;
+            margin: 0 1em;
+        }
+
+        .time {
+            color: $barColor;
+        }
+
+        .progress {
+            position: relative;
+            display: inline-block;
+            flex-grow: 1;
+            background-color: $backgroundColor;
+            height: $height;
+
+            .marker {
+                display: inline-block;
+                position: absolute;
+                box-sizing: content-box;
+                left: -$markerWidth/2;
+                top: ($height - $markerWidth) / 2;
+                width: 0;
+                height: 0;
+                border: $markerWidth/2 solid $markerColor;
+                border-radius: $markerWidth / 2;
+                opacity: 0;
+                transition: margin-left linear;
+            }
+
+            &:hover .marker {
+                opacity: 1;
+            }
+
+            .bar {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: inline-block;
+                width: 0%;
+                height: 100%;
+                background-color: $barColor;
+                transition-timing-function: linear;
+            }
+        }
+    }
+
+}

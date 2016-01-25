@@ -1,0 +1,34 @@
+{
+  "base": "semantic/",
+  "paths": {
+    "source": {
+      "config": "src/theme.config",
+      "definitions": "src/definitions/",
+      "site": "src/site/",
+      "themes": "src/themes/"
+    },
+    "output": {
+      "packaged": "out/",
+      "uncompressed": "out/components/",
+      "compressed": "out/components/",
+      "themes": "out/themes/"
+    },
+    "clean": "dist/"
+  },
+  "permission": false,
+  "rtl": "No",
+  "components": [
+    "reset",
+    "site",
+    "button",
+    "icon",
+    "segment",
+    "form",
+    "menu",
+    "dimmer",
+    "tab",
+    "form",
+    "visibility"
+  ],
+  "version": "2.1.7"
+}

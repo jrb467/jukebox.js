@@ -1,0 +1,23 @@
+.song {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: space-around;
+    transition: background-color 250ms, color 250ms;
+
+    $imageSize: 120px;
+
+    .icon {
+        width: $imageSize;
+        height: $imageSize;
+    }
+
+    .metadata{
+        margin: 1em;
+
+        h1,h2,h3,h4,h5,h6 {
+            font-weight: normal;
+            font-family: sans-serif;
+        }
+    }
+
+}

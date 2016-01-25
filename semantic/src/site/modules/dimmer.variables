@@ -1,0 +1,8 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+//This should work
+@simpleStartBackgroundColor: rgba(50,50,50,0.0);
+@simpleEndBackgroundColor: rgba(50,50,50,0.5);
+@transition : background-color 250ms;

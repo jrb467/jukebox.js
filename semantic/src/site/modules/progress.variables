@@ -1,0 +1,9 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@lastMargin: 0;
+@activePulseMaxOpacity: 0;
+@defaultEasing: linear;
+@activeMinWidth: 0;
+@barMinWidth: 0;

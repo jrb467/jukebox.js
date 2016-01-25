@@ -1,0 +1,113 @@
+header {
+  transition: .75s;
+  background-color: black;
+  color: #aaaaaa;
+  padding: 1em; }
+
+.row {
+  width: 100%; }
+
+#upload {
+  flex-grow: 1; }
+
+#main-body {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden; }
+
+#container {
+  height: 100%; }
+
+#content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  height: 100%; }
+
+.queue-enter {
+  opacity: 0.01;
+  transition: opacity 250ms ease-in; }
+
+.queue-enter.queue-enter-active {
+  opacity: 1; }
+
+#queue {
+  overflow: scroll;
+  overflow-x: auto;
+  padding: 1em;
+  width: 66%; }
+
+.song {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: space-around;
+  transition: background-color 250ms, color 250ms; }
+  .song .icon {
+    width: 120px;
+    height: 120px; }
+  .song .metadata {
+    margin: 1em; }
+    .song .metadata h1, .song .metadata h2, .song .metadata h3, .song .metadata h4, .song .metadata h5, .song .metadata h6 {
+      font-weight: normal;
+      font-family: sans-serif; }
+
+#song-info {
+  background-color: #cccccc;
+  padding: 1em;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #888888; }
+  #song-info > * {
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
+  #song-info #song-time {
+    flex-grow: 3; }
+  #song-info #song-progress {
+    width: 30%;
+    display: flex;
+    align-items: center; }
+    #song-info #song-progress p {
+      display: inline;
+      flex-grow: 0;
+      margin: 0 1em; }
+    #song-info #song-progress .time {
+      color: #cc0000; }
+    #song-info #song-progress .progress {
+      position: relative;
+      display: inline-block;
+      flex-grow: 1;
+      background-color: #aaaaaa;
+      height: 0.5em; }
+      #song-info #song-progress .progress .marker {
+        display: inline-block;
+        position: absolute;
+        box-sizing: content-box;
+        left: -0.5em;
+        top: -0.25em;
+        width: 0;
+        height: 0;
+        border: 0.5em solid #555555;
+        border-radius: 0.5em;
+        opacity: 0;
+        transition: margin-left linear; }
+      #song-info #song-progress .progress:hover .marker {
+        opacity: 1; }
+      #song-info #song-progress .progress .bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        width: 0%;
+        height: 100%;
+        background-color: #cc0000;
+        transition-timing-function: linear; }
+
+#upload {
+  overflow-y: scroll;
+  width: 33%; }
+
+#song-file {
+  display: none; }

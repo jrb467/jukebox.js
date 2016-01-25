@@ -1,0 +1,42 @@
+
+header {
+    transition: .75s;
+    background-color: black;
+    color: #aaaaaa;
+    padding: 1em;
+}
+
+.row {
+    width: 100%;
+}
+
+#upload {
+    flex-grow: 1;
+}
+
+#main-body {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#container {
+    height: 100%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.queue-enter {
+    opacity: 0.01;
+    transition: opacity 250ms ease-in;
+}
+
+.queue-enter.queue-enter-active {
+    opacity: 1;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "jukebox.js",
+  "description": "Collaborative music player",
+  "main": "server.js",
+  "authors": [
+    "Jacob Bigenwald"
+  ],
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "music",
+    "democratic",
+    "collaborative",
+    "stichd",
+    "player",
+    "party"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
