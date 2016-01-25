@@ -11,18 +11,6 @@ io.on('connection', function(socket){
     var state = speakers.serialize();
     state.isPaused = speakers.isPaused();
     socket.emit('state', state);
-    socket.on('cmd', function(cmd){
-
-    });
-    socket.on('add', function(song){
-
-    });
-    /* NOTE: although methods working for doing song addition with socketio,
-     * the older version is being kept b/c it works fine
-    socket.on('add', function(params){
-        //params has method + whatever else is needed
-    });
-    */
 });
 
 speakers.events.on('add', function(song){

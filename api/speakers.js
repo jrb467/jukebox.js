@@ -1,7 +1,7 @@
 var EventEmitter = require('events'),
     em = new EventEmitter();
 
-var Mpg = require('mpg123'),
+var Mpg = require('./mpg123.js'),
     speakers = new Mpg(),
     Queue = require('./queue');
 
@@ -82,7 +82,6 @@ speakers.on('error', function(err){
     em.emit('error', err);
 });
 
-//TODO test if speakers.play plays the next song immediately or just queues it
 //Ideally it plays it immediately - if it doesn't it should have some skip command available
 //Utility to call when the current index changes in the queue, so the speakers can update
 function positionChanged(){

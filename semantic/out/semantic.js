@@ -1,5 +1,5 @@
  /*
- * # Semantic UI - 2.1.7
+ * # Semantic UI - 2.1.8
  * https://github.com/Semantic-Org/Semantic-UI
  * http://www.semantic-ui.com/
  *
@@ -9,7 +9,7 @@
  *
  */
 /*!
- * # Semantic UI 2.1.7 - Site
+ * # Semantic UI 2.1.8 - Site
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -497,7 +497,7 @@ $.extend($.expr[ ":" ], {
 })( jQuery, window, document );
 
 /*!
- * # Semantic UI 2.1.7 - Form Validation
+ * # Semantic UI 2.1.8 - Form Validation
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -2015,7 +2015,7 @@ $.fn.form.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Semantic UI 2.1.7 - Dimmer
+ * # Semantic UI 2.1.8 - Dimmer
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -2708,7 +2708,7 @@ $.fn.dimmer.settings = {
 
 })( jQuery, window, document );
 /*!
- * # Semantic UI 2.1.7 - Tab
+ * # Semantic UI 2.1.8 - Tab
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -3607,7 +3607,7 @@ $.fn.tab.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Semantic UI 2.1.7 - Visibility
+ * # Semantic UI 2.1.8 - Visibility
  * http://github.com/semantic-org/semantic-ui/
  *
  *
