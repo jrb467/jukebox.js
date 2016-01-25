@@ -8,3 +8,5 @@ uploads/*
 .jshintrc
 .sass-cache
 sortofbutnotreallyagulpfile.txt
+client/bundle.js
+client/styles.css
