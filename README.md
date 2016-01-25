@@ -10,7 +10,9 @@ Currently, any song added is queued automatically. There's no limitation on uplo
 
 ## Setup
 
-First and foremost all the necessary packages must be installed. This includes the CLI program ```mpg123``` and all the node and bower modules. Node modules are installed with ```npm install``` (note that ```npm``` and ```node``` must be installed prior) and bower with ```bower install```.
+First and foremost all the necessary packages must be installed. This includes the CLI program ```mpg123``` and all the node and bower modules. Node modules are installed with ```npm install``` (note that ```npm``` and ```node``` must be installed prior) and bower components with ```bower install jquery```
+
+NOTE: if using bower just for jquery doesn't strike your fancy, just modify ./client/index.html to change the jquery script import to the source of your choosing 
 
 After that, two empty folders ('artwork' and 'uploads') both need to be created in the project root (these are assumed at runtime to exist).
 
